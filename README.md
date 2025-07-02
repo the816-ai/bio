@@ -530,3 +530,60 @@
                         </div>
                         <div class="product-item">
                             <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' fill='%23a29bfe'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='10' fill='white'%3EKính%3C/text%3E%3C/svg%3E" alt="Kính">
+<!-- CỬA HÀNG -->
+<div id="shops" class="tab-content">
+  <div class="section">
+    <div class="section-title">🏬 Cửa hàng yêu thích</div>
+    <div class="shop-links">
+      <a href="https://shopee.vn/mystore" class="shop-link" target="_blank">
+        <i class="fab fa-shopee"></i> Shopee Store
+      </a>
+      <a href="https://tiktok.com/@mystore" class="shop-link" target="_blank">
+        <i class="fab fa-tiktok"></i> TikTok Store
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- DANH MỤC -->
+<div id="categories" class="tab-content">
+  <div class="section">
+    <div class="section-title">🗂️ Danh mục sản phẩm</div>
+    <div class="category-showcase">
+      <div class="category-card">
+        <img src="https://via.placeholder.com/200x100?text=Áo+dài" alt="Áo dài">
+        <div class="category-info">
+          <div class="category-name">Áo dài</div>
+          <div class="category-count">332 sản phẩm</div>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://via.placeholder.com/200x100?text=Váy" alt="Váy">
+        <div class="category-info">
+          <div class="category-name">Váy</div>
+          <div class="category-count">185 sản phẩm</div>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://via.placeholder.com/200x100?text=Set+đồ" alt="Set đồ">
+        <div class="category-info">
+          <div class="category-name">Set đồ</div>
+          <div class="category-count">122 sản phẩm</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  document.querySelectorAll('.tab-content').forEach(section => {
+    section.classList.remove('active');
+  });
+
+  const target = document.getElementById(tab);
+  if (target) target.classList.add('active');
+}
+</script>
